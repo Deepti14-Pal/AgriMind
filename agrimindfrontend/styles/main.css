@@ -1,0 +1,66 @@
+@font-face {
+  font-family: 'HarryPotter';
+  src: url('https://fonts.cdnfonts.com/css/harry-potter') format('woff2');
+}
+
+body {
+  font-family: 'EB Garamond', serif;
+  background-color: #0f172a;
+  background-image: url('../assests/background.jpg');
+  background-attachment: fixed;
+  color: #e5e7eb;
+}
+
+.navbar {
+  background: rgba(6, 17, 42, 0.8);
+  backdrop-filter: blur(10px);
+}
+
+.harry-potter-font {
+  font-family: 'HarryPotter', 'Cinzel', serif;
+}
+
+.spell-card {
+  background: rgba(31, 41, 55, 0.7);
+  border: 1px solid #8b5cf6;
+  transition: all 0.3s ease;
+}
+
+.spell-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(139, 92, 246, 0.3);
+}
+
+.magic-button {
+  background: linear-gradient(135deg, #7c3aed 0%, #8b5cf6 100%);
+  box-shadow: 0 4px 15px rgba(139, 92, 246, 0.4);
+  transition: all 0.3s;
+}
+
+.magic-button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 25px rgba(139, 92, 246, 0.6);
+}
+
+.parchment {
+  background-color: #f8f3e6;
+  background-image: linear-gradient(to bottom, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0) 2px, rgba(0,0,0,0) 100%);
+}
+
+.wiggly-letters span {
+  display: inline-block;
+  animation: wiggle 3s infinite alternate;
+}
+
+@keyframes wiggle {
+  0%, 100% { transform: rotate(-2deg); }
+  50% { transform: rotate(2deg); }
+}
+
+.wand-cursor {
+  cursor: url('../assets/wand.png'), auto;
+}
+
+.hover-glow:hover {
+  text-shadow: 0 0 10px #8b5cf6;
+}
